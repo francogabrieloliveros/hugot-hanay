@@ -47,7 +47,7 @@ const words = [
 
   {
     word: "nilamon",
-    clue: "Kinain nang mabilis sa gitna ng maynila mong mahal (7)",
+    clue: "Kinain ng mabilis sa gitna ng maynila mong mahal (7)",
     fodder: '"maynila mong"',
     definition: "Kinain ng mabilis.",
     indicator: "Sa gitna.",
@@ -129,7 +129,7 @@ const words = [
     fodder: '"tuktok", "romblon"',
     definition: "Direksyon.",
     indicator: '"Tuktok", kaya pinakataas o unahan.',
-    yellow: ["Tuktok", "romblon"],
+    yellow: ["Tutok", "romblon"],
     blue: ["direksyon"],
     pink: [],
   },
