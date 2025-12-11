@@ -1,4 +1,5 @@
 import reveal from "../methods/reveal.js";
+import { useState } from "react";
 
 function HintBox({
   word,
@@ -18,6 +19,8 @@ function HintBox({
   setRevealed,
   setWon,
 }) {
+  const [shownLetter, setShownLetter] = useState(0);
+
   return (
     <div
       className={`fixed right-0 bottom-5 left-0 z-10 flex ${show ? "" : "translate-y-[120%]"} flex-col items-center transition-all`}
@@ -112,7 +115,11 @@ function HintBox({
 
                 setShow(false);
                 setClueCount((prev) => {
-                  const newC = prev === word.length ? prev : prev + 1;
+                  const newShownLetter = shownLetter + 1;
+                  setShownLetter(newShownLetter);
+
+                  const newC = newShownLetter > word.length ? prev : prev + 1;
+
                   if (newC === word.length + 3) {
                     setWon(true);
                   }
