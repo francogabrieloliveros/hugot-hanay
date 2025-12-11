@@ -27,9 +27,9 @@ function AboutPage() {
         <div className="ml-8">
           <h4 className="oleo mb-2 text-xl">1. indikador</h4>
           <p className="mb-5 ml-8">
-            Isang salita o pariralang nagsasabi kung anong klaseng wordplay ang
-            ginagamit. Halimbawa ng indikator: halo, baligtad, tinanggal,
-            tunog-katulad etc.
+            Isang salita o pariralang nagsasabi kung anong klaseng paglalaro ng
+            salita ang ginagamit. Halimbawa ng indikador: halo, baligtad,
+            tinanggal, tunog-katulad etc.
           </p>
           <h4 className="oleo mb-2 text-xl">2. pinagmulan</h4>
           <p className="mb-5 ml-8">
@@ -54,9 +54,9 @@ function AboutPage() {
             Ito ang magsasabi kung anong operasyon ang gagawin mo. Halimbawa:
           </p>
           <ul className="mb-5 ml-20 list-disc">
-            <li>“baligtad” → i-reverse ang salita</li>
-            <li>“halo” → i-anagram (haluin ang letra)</li>
-            <li>“tunog-katulad” → homophone (katunog)</li>
+            <li>“baligtad” → baliktarin ang salita</li>
+            <li>“halo” → haluin ang letra</li>
+            <li>“tunog-katulad” → katunog</li>
           </ul>
           <h4 className="oleo mb-2 text-xl">
             3. Gamiting ang paglalaro ng salita
