@@ -44,7 +44,7 @@ function Game({ word, setWordInd }) {
   return (
     <div
       tabIndex={0}
-      className="mx-auto max-w-[660px]"
+      className="mx-auto max-w-[660px] outline-none focus:outline-none"
       onKeyDown={(e) =>
         handlePhysicalKeyPress(
           e,
