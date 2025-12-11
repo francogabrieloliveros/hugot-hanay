@@ -9,7 +9,7 @@ import Hint from "../assets/Hint.jsx";
 import ClueCount from "../assets/ClueCount.jsx";
 import Won from "../assets/Won.jsx";
 
-function Game({ word, setWordInd }) {
+function Game({ word, setWordInd, end }) {
   const [guess, setGuess] = useState(new Array(word.word.length).fill(0));
   const [currIndex, setCurrIndex] = useState(0);
   const [showHint, setShowHint] = useState(false);
@@ -61,6 +61,7 @@ function Game({ word, setWordInd }) {
         setShow={setWon}
         clueTotal={word.word.length + 3}
         clueCount={clueCount}
+        end={end}
         setWordInd={setWordInd}
       />
       <Hint

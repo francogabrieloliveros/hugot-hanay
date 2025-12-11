@@ -13,6 +13,7 @@ function GamePage() {
       <Header />
       <Game
         word={shuffledWords[wordInd]}
+        end={wordInd === shuffledWords.length - 1}
         setWordInd={setWordInd}
         key={wordInd}
       />
