@@ -14,7 +14,7 @@ function AboutPage() {
           kahulugan, susubukin nito ang iyong talas ng isip at abstraktong
           imahinasyon upang matuklasan ang nawawalang salita. Sa ganitong
           paraan, layunin ng proyektong ito na makatulong sa pag-uswag ng
-          paggamit ng wikang Filipino sa iba’t ibang larang.
+          paggamit ng wikang Filipino sa iba’t ibang larangan.
         </p>
         <h3 className="oleo mt-4 mb-2 text-center text-2xl">mga katuwang</h3>
         <p className="text-center">Chelzea Rein Regala</p>
