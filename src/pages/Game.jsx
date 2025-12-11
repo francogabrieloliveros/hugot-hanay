@@ -58,7 +58,6 @@ function Game({ word, setWordInd, end }) {
     >
       <Won
         show={won}
-        setShow={setWon}
         clueTotal={word.word.length + 3}
         clueCount={clueCount}
         end={end}
