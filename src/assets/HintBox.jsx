@@ -42,14 +42,7 @@ function HintBox({
                 setShow(false);
                 setShowIndicator(true);
                 setIndicatorShown(true);
-                setClueCount((prev) => {
-                  const newC = indicatorShown ? prev : prev + 1;
-                  if (newC === word.length + 3) {
-                    setShowIndicator(false);
-                    setWon(true);
-                  }
-                  return newC;
-                });
+                setClueCount((prev) => (indicatorShown ? prev : prev + 1));
               }}
             >
               ipakita ang indikador
@@ -63,14 +56,7 @@ function HintBox({
                 setShow(false);
                 setShowFodder(true);
                 setFodderShown(true);
-                setClueCount((prev) => {
-                  const newC = fodderShown ? prev : prev + 1;
-                  if (newC === word.length + 3) {
-                    setShowFodder(false);
-                    setWon(true);
-                  }
-                  return newC;
-                });
+                setClueCount((prev) => (fodderShown ? prev : prev + 1));
               }}
             >
               ipakita ang pinagmulan
@@ -84,14 +70,7 @@ function HintBox({
                 setShow(false);
                 setShowDefinition(true);
                 setDefinitionShown(true);
-                setClueCount((prev) => {
-                  const newC = definitionShown ? prev : prev + 1;
-                  if (newC === word.length + 3) {
-                    setShowDefinition(false);
-                    setWon(true);
-                  }
-                  return newC;
-                });
+                setClueCount((prev) => (definitionShown ? prev : prev + 1));
               }}
             >
               ipakita ang kahulugan
@@ -119,8 +98,7 @@ function HintBox({
                   setShownLetter(newShownLetter);
 
                   const newC = newShownLetter > word.length ? prev : prev + 1;
-
-                  if (newC === word.length + 3) {
+                  if (newShownLetter === word.length) {
                     setWon(true);
                   }
                   return newC;
